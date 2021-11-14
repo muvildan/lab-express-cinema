@@ -1,0 +1,11 @@
+<section class="list">
+    <ul>
+        {{#each findMovies}}
+          <li>
+              <img src="{{this.image}}">
+              {{this.title}}
+              <a href="/movies/{{this._id}}">See more</a>
+          </li>
+        {{/each}}
+    </ul>
+</section>
