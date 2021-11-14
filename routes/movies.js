@@ -2,11 +2,11 @@ const express = require('express');
 const router = express.Router();
 const Movie = require ("../models/Movie.model")
 
-// require the Drone model here
+// require the Movie model here
 
 router.route('/movies')
 .get( async (req, res, next) => {
-  // Iteration #2: List the drones
+  // Iteration #2: List the movies
   // ... your code here
   try {
     let findMovies = await Movie.find()
@@ -19,7 +19,7 @@ router.route('/movies')
 
 router.route('/movies/:id')
 .get( async (req, res, next) => {
-  // Iteration #2: List the drones
+  // Iteration #2: List the movies
   // ... your code here
   try {
     const idMovie = req.params.id; 
